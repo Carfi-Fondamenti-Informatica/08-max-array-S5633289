@@ -4,8 +4,6 @@
 #include <iostream>
 #include "lib.h"
 
-using namespace std;
-
 float maggiore(float numero[], int n) {
 
     float cont = numero[0];
@@ -16,3 +14,4 @@ float maggiore(float numero[], int n) {
     }
     return cont;
 }
+
