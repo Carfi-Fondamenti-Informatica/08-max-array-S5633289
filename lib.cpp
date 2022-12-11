@@ -1,21 +1,17 @@
 //
 // Created by Davide on 02/12/2022.
 //
-#include "lib.h"
 #include <iostream>
+#include "lib.h"
 
 using namespace std;
 
-float maggiore(int n) {
-    float numeri[n];
+float maggiore(float numero[], int n) {
+
+    float cont = numero[0];
     for (int i = 0; i < n; i++) {
-        cout << "inserisci il numero:";
-        cin >> numeri[i];
-    }
-    float cont = numeri[0];
-    for (int i = 0; i < n; i++) {
-        if (numeri[i] > cont) {
-            cont = numeri[i];
+        if (numero[i] > cont) {
+            cont = numero[i];
         }
     }
     return cont;
